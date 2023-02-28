@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { StyledHeader } from "./styledHeader";
+import { StyledHeader } from "./styles/styledHeader";
 
 export const Header = () => {
   return (
