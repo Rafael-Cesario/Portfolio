@@ -6,12 +6,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    font-weight: normal;
 }
 
   body {
     margin: 1rem;
     background-color: #101010 ;
-    color: #eee
+    color: #eee;
   }
 `;
 
