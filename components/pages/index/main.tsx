@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Presentation } from "./presentation";
 import { Socials } from "./socials";
-import { Notification } from "../notification";
+import { Notification } from "../../notification";
 
 export const Main = () => {
   const [notification, setNotification] = useState({

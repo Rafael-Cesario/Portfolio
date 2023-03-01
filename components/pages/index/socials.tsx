@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { StyledSocials } from "./styles/styledSocials";
-import { Notification } from "../notification";
+import { Notification } from "../../notification";
 import { useState } from "react";
 
 interface SocialsProps {
@@ -28,7 +28,7 @@ export const Socials = ({ props: { setNotification } }: SocialsProps) => {
         href={"#"}
         onClick={() => {
           navigator.clipboard.writeText("rafaeloliveiracds@gmail.com");
-          setNotification({ active: true, txt: "O meu gmail deve ter sido copiado para sua area de transfêrencia." });
+          setNotification({ active: true, txt: "O meu gmail deve ter sido copiado para sua área de transfêrencia." });
         }}
       >
         <Image className="image" alt="gmail icon" src={"/icons/email.png"} width={"20"} height={"20"} />

@@ -1,15 +1,18 @@
-import { StyledIndex } from "@/styles/styledIndex";
-import { CustomHead } from "@/components/customHead";
-import { Header } from "@/components/pages/header";
-import { Main } from "@/components/pages/main";
+import { StyledPage } from "@/styles/styledPage";
+import { Header } from "@/components/header";
+import { Main } from "@/components/pages/index/main";
+import Head from "next/head";
 
 const Index = () => {
   return (
-    <StyledIndex>
-      <CustomHead />
+    <StyledPage>
+      <Head>
+        <title>Rafael</title>
+      </Head>
+
       <Header />
       <Main />
-    </StyledIndex>
+    </StyledPage>
   );
 };
 
