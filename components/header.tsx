@@ -6,21 +6,10 @@ export const Header = () => {
     <StyledHeader>
       <Link href={"/"}>Inicio</Link>
 
-      <Link href={"/projectContainer"} as={"Projetos"}>
-        Projetos
-      </Link>
-
-      <Link href={"/about"} as={"Sobre-mim"}>
-        Sobre mim
-      </Link>
-
-      <Link href={"/skills"} as={"Habilidades"}>
-        Habilidades
-      </Link>
-
-      <Link href={"/contact"} as={"Contato"}>
-        Contato
-      </Link>
+      <Link href={"/projectContainer"}>Projetos</Link>
+      <Link href={"/about"}>Sobre mim</Link>
+      <Link href={"/skills"}>Habilidades</Link>
+      <Link href={"/contact"}>Contato</Link>
     </StyledHeader>
   );
 };

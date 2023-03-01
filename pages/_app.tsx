@@ -8,13 +8,31 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Inconsolata', monospace;
     font-weight: normal;
-}
-
+  }
+  
   body {
     margin: 1rem;
     background-color: #101010 ;
     color: #eee;
+
+    ::-webkit-scrollbar {
+      background-color: #101010;
+    }
+
+    ::-webkit-scrollbar-button{
+      background-color: #202020;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: #202020;
+      border-radius: 2px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background-color: #151515;
+    }
   }
+
 `;
 
 // interface ThemeInterface {
