@@ -1,4 +1,4 @@
-import Document, { DocumentContext, DocumentInitialProps } from "next/document";
+import Document, { DocumentContext, DocumentInitialProps, Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
@@ -25,5 +25,20 @@ export default class MyDocument extends Document {
     } finally {
       sheet.seal();
     }
+  }
+
+  render(): JSX.Element {
+    return (
+      <Html>
+        <Head>
+          <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
+          <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
   }
 }
