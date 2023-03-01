@@ -2,17 +2,18 @@ import { palette } from "@/styles/palette";
 import styled from "styled-components";
 
 export const StyledProject = styled.div`
-  margin: 5rem 0;
+  width: 100%;
   max-width: 800px;
+  margin: 5rem 1rem;
   background-color: #151515;
   border-radius: ${palette.element.borderRadius};
   box-shadow: 10px 10px 5px #00000020;
   position: relative;
-  padding: 1rem;
+  padding: 2rem;
 
   .title {
     position: absolute;
-    transform: translate(0, -30px);
+    transform: translate(0, -50px);
     background-color: ${palette.colors.bgBlue};
     padding: 0.5rem 2rem;
     font-size: 1.1rem;

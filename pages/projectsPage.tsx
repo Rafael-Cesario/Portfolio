@@ -1,11 +1,11 @@
 import { Header } from "@/components/header";
-import { Project } from "@/components/pages/projectContainer/project";
+import { ProjectContainer } from "@/components/pages/projectContainer/projectContainer";
 import { Title } from "@/components/pages/projectContainer/title";
 import { StyledPage } from "@/styles/styledPage";
 import Head from "next/head";
 import Link from "next/link";
 
-const ProjectContainer = () => {
+const ProjectsPage = () => {
   return (
     <StyledPage>
       <Head>
@@ -15,12 +15,12 @@ const ProjectContainer = () => {
       <Header />
       <Title />
 
-      <Project />
-      <Project />
-      <Project />
-      <Project />
+      <ProjectContainer />
+      <ProjectContainer />
+      <ProjectContainer />
+      <ProjectContainer />
     </StyledPage>
   );
 };
 
-export default ProjectContainer;
+export default ProjectsPage;
