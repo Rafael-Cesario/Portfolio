@@ -32,6 +32,7 @@ export const StyledPresentation = styled.div`
     padding: 1rem 4rem;
     color: #ddd;
     animation: h1 0.3s ease-out 0.3s both;
+    box-shadow: 10px 10px 2px #00000020;
 
     @keyframes h1 {
       0% {

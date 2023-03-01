@@ -1,8 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { StyledSocials } from "./styles/styledSocials";
+import { Notification } from "../notification";
+import { useState } from "react";
 
-export const Socials = () => {
+interface SocialsProps {
+  props: {
+    setNotification: (newState: { active: boolean; txt: string }) => void;
+  };
+}
+
+export const Socials = ({ props: { setNotification } }: SocialsProps) => {
   return (
     <StyledSocials>
       <Link target={"_blank"} className="link" href={"http://github.com/rafael-cesario"}>
@@ -15,7 +23,14 @@ export const Socials = () => {
         <span className="hide">Linkedin</span>
       </Link>
 
-      <Link onClick={() => navigator.clipboard.writeText("rafaeloliveiracds@gmail.com")} className="link" href={"#"}>
+      <Link
+        className="link"
+        href={"#"}
+        onClick={() => {
+          navigator.clipboard.writeText("rafaeloliveiracds@gmail.com");
+          setNotification({ active: true, txt: "O meu gmail deve ter sido copiado para sua area de transfêrencia" });
+        }}
+      >
         <Image className="image" alt="gmail icon" src={"/icons/email.png"} width={"20"} height={"20"} />
         <span className="hide">RafaelOliveiracds@gmail.com</span>
       </Link>

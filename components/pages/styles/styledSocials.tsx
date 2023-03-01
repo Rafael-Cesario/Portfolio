@@ -26,24 +26,25 @@ export const StyledSocials = styled.div`
 
     .hide {
       font-weight: bold;
-      opacity: 0;
+      display: none;
     }
 
     :hover .hide {
       color: #eee;
-      opacity: 1;
-      animation: test ease 0.3s;
+      display: inline;
+      animation: test ease 0.3s both;
     }
   }
 
   @keyframes test {
     0% {
       transform: translateX(50px);
-      opacity: 0;
+      display: none;
     }
 
     100% {
       opacity: 100;
+      display: inline;
     }
   }
 `;
