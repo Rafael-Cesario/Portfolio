@@ -1,3 +1,4 @@
+import { palette } from "@/styles/palette";
 import styled from "styled-components";
 
 export const StyledPresentation = styled.div`
@@ -8,7 +9,7 @@ export const StyledPresentation = styled.div`
   span {
     background-color: #005090;
     padding: 0.5rem 1rem;
-    border-radius: 2px;
+    border-radius: ${palette.element.borderRadius};
     position: absolute;
     transform: translate(10px, -20px);
     animation: span 0.3s ease-out both;
@@ -33,6 +34,7 @@ export const StyledPresentation = styled.div`
     color: #ddd;
     animation: h1 0.3s ease-out 0.3s both;
     box-shadow: 10px 10px 2px #00000020;
+    border-radius: ${palette.element.borderRadius};
 
     @keyframes h1 {
       0% {

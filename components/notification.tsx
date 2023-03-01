@@ -16,7 +16,8 @@ export const Notification = ({ props: { txt, active, setNotification } }: Notifi
         x
       </button>
 
-      <h1 className="txt">{txt}</h1>
+      <h1 className="title">Texto copiado</h1>
+      <p className="txt">{txt}</p>
     </StyledNotification>
   ) : (
     <></>

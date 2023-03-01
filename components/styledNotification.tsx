@@ -1,13 +1,13 @@
+import { palette } from "@/styles/palette";
 import styled from "styled-components";
 
 export const StyledNotification = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #005090;
-  border-radius: 2px;
+  background-color: #151515;
+  border-radius: ${palette.element.borderRadius};
   padding: 0.5rem 2rem;
-  padding-right: 3rem;
   max-width: 400px;
   margin: 1rem;
   animation: notification 0.3s ease-out both;
@@ -24,25 +24,33 @@ export const StyledNotification = styled.div`
     }
   }
 
+  .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ddd;
+  }
+
   .txt {
-    font-size: 1rem;
+    color: #aaa;
   }
 
   .close {
     position: absolute;
     right: 0;
-    top: 2px;
+    top: 0;
     border: none;
     outline: none;
     padding: 0.5rem 1rem;
     background-color: transparent;
     color: #ddd;
-    font-weight: bold;
     border-radius: 2px;
     cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
 
     :hover {
-      color: black;
+      color: ${palette.colors.textBlue};
     }
   }
 `;
