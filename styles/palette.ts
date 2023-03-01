@@ -1,7 +1,7 @@
 export const palette = {
   colors: {
     bgBlue: "#005090",
-    textBlue: "#0070aa",
+    textBlue: "#0090cc",
   },
 
   element: {
