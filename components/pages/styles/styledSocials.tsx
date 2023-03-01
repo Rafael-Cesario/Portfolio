@@ -30,7 +30,7 @@ export const StyledSocials = styled.div`
     }
 
     :hover .hide {
-      color: #eee;
+      color: #ddd;
       display: inline;
       animation: test ease 0.3s both;
     }

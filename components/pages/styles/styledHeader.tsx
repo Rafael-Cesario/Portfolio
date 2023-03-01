@@ -1,3 +1,4 @@
+import { palette } from "@/styles/palette";
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
@@ -15,7 +16,7 @@ export const StyledHeader = styled.header`
 
     :hover {
       color: #eee;
-      border-bottom: 2px solid #00aaff;
+      border-bottom: 2px solid ${palette.colors.textBlue};
     }
   }
 `;
