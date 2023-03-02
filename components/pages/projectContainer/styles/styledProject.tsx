@@ -37,18 +37,14 @@ export const StyledProject = styled.div`
 
   .txt {
     margin: 1rem 0;
-    color: #aaa;
+    color: #ddd;
   }
 
   .stack {
     margin: 1rem 0;
     color: #aaa;
     margin-bottom: 1rem;
-
-    span {
-      margin-right: 1rem;
-      margin-bottom: 0.5rem;
-    }
+    text-transform: capitalize;
   }
 
   .scope {

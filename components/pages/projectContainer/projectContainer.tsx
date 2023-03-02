@@ -5,12 +5,12 @@ import { projectsData } from "./utils/projectsData";
 export const ProjectContainer = () => {
   return (
     <>
-      {projectsData.map(({ name, txt, stack, scope }) => {
+      {projectsData.map(({ name, txt, stack, scope, github }) => {
         return (
           <StyledProject>
             <h1 className="title">{name}</h1>
 
-            <Link href={"http://github.com/rafael-cesario/wordList"} target={"_blank"}>
+            <Link href={github} target={"_blank"}>
               Github
             </Link>
 

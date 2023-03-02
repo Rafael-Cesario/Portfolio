@@ -14,10 +14,6 @@ const ProjectsPage = () => {
 
       <Header />
       <Title />
-
-      <ProjectContainer />
-      <ProjectContainer />
-      <ProjectContainer />
       <ProjectContainer />
     </StyledPage>
   );
