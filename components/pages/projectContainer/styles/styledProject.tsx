@@ -11,6 +11,19 @@ export const StyledProject = styled.div`
   position: relative;
   padding: 2rem;
 
+  animation: projects 0.3s ease-in both;
+
+  @keyframes projects {
+    0% {
+      opacity: 0;
+      transform: translate(5rem, 0);
+    }
+
+    50% {
+      opacity: 1;
+    }
+  }
+
   .title {
     position: absolute;
     transform: translate(0, -50px);
