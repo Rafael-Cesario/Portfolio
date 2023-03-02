@@ -7,7 +7,7 @@ export const StyledPresentation = styled.div`
   transform: translate(0, -50%);
 
   span {
-    background-color: #005090;
+    background-color: ${palette.colors.bgBlue};
     padding: 0.5rem 1rem;
     border-radius: ${palette.element.borderRadius};
     position: absolute;
