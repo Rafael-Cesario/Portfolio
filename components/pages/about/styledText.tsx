@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledText = styled.div`
-  margin: 5rem;
+  margin: 10rem 5rem;
   max-width: 800px;
   position: relative;
 
