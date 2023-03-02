@@ -2,11 +2,11 @@ import { useState } from "react";
 import { StyledFilter } from "./styles/styledFilter";
 
 export const Filter = () => {
-  const [stack, setStack] = useState("");
+  const [stackFilter, setStackFilter] = useState("");
+  const [stackMenu, setStackMenu] = useState("");
 
-  const showStack = () => {
-    setStack(stack.includes("hide") ? "" : "hide");
-  };
+  const showStack = () => setStackMenu(stackMenu.includes("hide") ? "" : "hide");
+  const changeStackFilter = (stack: string) => setStackFilter(stackFilter === stack ? "" : stack);
 
   return (
     <StyledFilter>
@@ -15,10 +15,10 @@ export const Filter = () => {
       <div className="stack">
         <button onClick={() => showStack()}>Stack</button>
 
-        <div className={stack + " filter"}>
-          <button>FrontEnd</button>
-          <button>BackEnd</button>
-          <button>FullStack</button>
+        <div className={stackMenu + " filter"}>
+          <button onClick={() => changeStackFilter("frontEnd")}>FrontEnd</button>
+          <button onClick={() => changeStackFilter("backEnd")}>BackEnd</button>
+          <button onClick={() => changeStackFilter("fullStack")}>FullStack</button>
         </div>
       </div>
     </StyledFilter>

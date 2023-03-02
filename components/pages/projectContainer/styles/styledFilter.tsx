@@ -27,7 +27,8 @@ export const StyledFilter = styled.div`
     margin-right: 2rem;
     border: none;
     outline: none;
-    background-color: ${palette.colors.bgBlue};
+    /* background-color: ${palette.colors.bgBlue}; */
+    background-color: #151515;
     color: #ddd;
     padding: 0.5rem 1rem;
     border-radius: ${palette.element.borderRadius};
