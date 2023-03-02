@@ -7,7 +7,7 @@ export const ProjectContainer = () => {
     <>
       {projectsData.map(({ name, txt, stack, scope, github }) => {
         return (
-          <StyledProject>
+          <StyledProject key={name}>
             <h1 className="title">{name}</h1>
 
             <Link href={github} target={"_blank"}>
