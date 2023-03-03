@@ -65,4 +65,11 @@ export const StyledPresentation = styled.div`
       }
     }
   }
+
+  @media (max-width: 520px) {
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
 `;

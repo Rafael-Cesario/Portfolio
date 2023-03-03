@@ -25,26 +25,56 @@ export const StyledSocials = styled.div`
     }
 
     .hide {
+      position: absolute;
       font-weight: bold;
       display: none;
+      transform: translateX(2rem);
     }
 
     :hover .hide {
       color: #ddd;
       display: inline;
-      animation: test ease 0.3s both;
+      animation: showContent ease 0.3s both;
     }
   }
 
-  @keyframes test {
+  @keyframes showContent {
     0% {
-      transform: translateX(50px);
+      transform: translateX(5rem);
       display: none;
     }
 
     100% {
       opacity: 100;
       display: inline;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    left: 50vw;
+    top: 70vh;
+    flex-direction: row;
+    transform: translate(-50%, -50%);
+
+    .link {
+      flex-direction: column;
+      margin-right: 1rem;
+
+      .hide {
+        transform: translate(-10%, 2rem);
+
+        @keyframes showContent {
+          0% {
+            transform: translate(-10%, 4rem);
+            display: none;
+          }
+
+          100% {
+            opacity: 100;
+            display: inline;
+          }
+        }
+      }
     }
   }
 `;
