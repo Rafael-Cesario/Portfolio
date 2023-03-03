@@ -1,26 +1,35 @@
 import { useState } from "react";
 import { StyledFilter } from "./styles/styledFilter";
 
-export const Filter = () => {
-  const [stackFilter, setStackFilter] = useState("");
-  const [stackMenu, setStackMenu] = useState("");
+interface FilterProps {
+  props: {
+    scopeFilter: string;
+    setScopeFilter: (newStackFilter: string) => void;
+  };
+}
 
-  const showStack = () => setStackMenu(stackMenu.includes("hide") ? "" : "hide");
-  const changeStackFilter = (stack: string) => setStackFilter(stackFilter === stack ? "" : stack);
+export const Filter = ({ props: { scopeFilter, setScopeFilter } }: FilterProps) => {
+  const changeStackFilter = (stack: string) => setScopeFilter(scopeFilter === stack ? "" : stack);
 
   return (
     <StyledFilter>
-      <input className="search" type="text" placeholder="Framework, nome de projeto..." />
+      <button
+        className={scopeFilter === "frontEnd" ? "active" : ""}
+        onClick={() => changeStackFilter("frontEnd")}>
+        FrontEnd
+      </button>
 
-      <div className="stack">
-        <button onClick={() => showStack()}>Stack</button>
+      <button
+        className={scopeFilter === "backEnd" ? "active" : ""}
+        onClick={() => changeStackFilter("backEnd")}>
+        BackEnd
+      </button>
 
-        <div className={stackMenu + " filter"}>
-          <button onClick={() => changeStackFilter("frontEnd")}>FrontEnd</button>
-          <button onClick={() => changeStackFilter("backEnd")}>BackEnd</button>
-          <button onClick={() => changeStackFilter("fullStack")}>FullStack</button>
-        </div>
-      </div>
+      <button
+        className={scopeFilter === "fullStack" ? "active" : ""}
+        onClick={() => changeStackFilter("fullStack")}>
+        FullStack
+      </button>
     </StyledFilter>
   );
 };

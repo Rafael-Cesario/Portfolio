@@ -5,8 +5,11 @@ import { Title } from "@/components/pages/projectContainer/title";
 import { StyledPage } from "@/styles/styledPage";
 import Head from "next/head";
 import Link from "next/link";
+import { useState } from "react";
 
 const ProjectsPage = () => {
+  const [scopeFilter, setScopeFilter] = useState("");
+
   return (
     <StyledPage>
       <Head>
@@ -15,8 +18,8 @@ const ProjectsPage = () => {
 
       <Header />
       <Title />
-      <Filter />
-      <ProjectContainer />
+      <Filter props={{ scopeFilter, setScopeFilter }} />
+      <ProjectContainer props={{ scopeFilter }} />
     </StyledPage>
   );
 };

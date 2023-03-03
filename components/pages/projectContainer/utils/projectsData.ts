@@ -11,7 +11,7 @@ export const projectsData: project[] = [
     name: "WordList",
     txt: "WordList é um site feito para te ajudar a aprender um idioma, mais precisamente para te ajudar a memorizar algumas palavras.",
     stack: "nextjs, styled-components, graphql, mongodb, vitest, typescript",
-    scope: "Full-Stack",
+    scope: "FullStack",
     github: "http://github.com/rafael-cesario/wordlist",
   },
 
@@ -35,7 +35,7 @@ export const projectsData: project[] = [
     name: "Login Page",
     txt: "Uma pagina para fazer login ou criar uma conta.",
     stack: "nextjs, graphql, tailwindcss, typescript, mongodb, JWT",
-    scope: "Full-Stack",
+    scope: "FullStack",
     github: "https://github.com/Rafael-Cesario/Projects/tree/main/08-login",
   },
 
@@ -51,7 +51,7 @@ export const projectsData: project[] = [
     name: "Projects",
     txt: "Alguns pequenos projetos focados em algo especifico.",
     stack: "",
-    scope: "Full-Stack",
+    scope: "FullStack",
     github: "https://github.com/Rafael-Cesario/Projects",
   },
 ];
