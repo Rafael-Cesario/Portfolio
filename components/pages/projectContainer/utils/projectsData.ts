@@ -28,7 +28,7 @@ export const projectsData: project[] = [
     txt: "Meu site pessoal para salvar meus projetos.",
     stack: "nextjs, styled-components, vitest, typescript",
     scope: "Frontend",
-    github: "http://github.com/rafael-cesario/portfolio-2.0",
+    github: "http://github.com/rafael-cesario/portfolio",
   },
 
   {
