@@ -1,7 +1,7 @@
-import { Header } from "@/components/header";
-import { StyledText } from "@/components/pages/about/styledText";
-import { StyledPage } from "@/styles/styledPage";
-import Head from "next/head";
+import { Header } from '@/components/header';
+import { StyledText } from '@/components/pages/about/styledText';
+import { StyledPage } from '@/styles/styledPage';
+import Head from 'next/head';
 
 const About = () => {
   return (
@@ -24,8 +24,14 @@ const About = () => {
 
         <p>
           Trabalhei com fotográfia e design por 2 anos, e agora estou estudando programação. Estou a
-          1 anos aprendendo a programar e criando projetos. Quero criar algo util ajudar pessoas a
-          estudar, anotar, serem mais organizadas e produtivas.
+          1 ano aprendendo a programar e criando projetos.
+        </p>
+
+        <p>
+          Com o objetivo de aprender a lidar com projetos maiores e mais complexos, estou atualmente
+          focando em criar projetos mais complexos, pensando sempre em formas melhores de lidar com,
+          estrutura de pastas, testes, padrões de projeto, repetição de código, código limpo, dados
+          e estado. Criar e lidar com esses projetos estão me tornando um programador melhor.
         </p>
       </StyledText>
     </StyledPage>
