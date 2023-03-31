@@ -28,7 +28,7 @@ export const projectsData: project[] = [
 
 	{
 		name: 'Algorithms',
-		url: 'algorithms',
+		url: '/',
 		txt: 'Uma coleção de algoritmos.',
 		stack: 'Javascript',
 		scope: '',
@@ -37,7 +37,7 @@ export const projectsData: project[] = [
 
 	{
 		name: 'Portfólio',
-		url: 'portfolio',
+		url: '/',
 		txt: 'Meu site pessoal para salvar meus projetos.',
 		stack: 'nextjs, styled-components, vitest, typescript',
 		scope: 'Frontend',
@@ -46,7 +46,7 @@ export const projectsData: project[] = [
 
 	{
 		name: 'Login',
-		url: 'login',
+		url: '/',
 		txt: 'Uma pagina para fazer login ou criar uma conta.',
 		stack: 'nextjs, graphql, tailwindcss, typescript, mongodb, JWT',
 		scope: 'FullStack',
@@ -55,7 +55,7 @@ export const projectsData: project[] = [
 
 	{
 		name: 'User Crud - Graphql',
-		url: 'user-crud-graphql',
+		url: '/',
 		txt: 'Um simples crud de usuario utilizando graphql.',
 		stack: 'graphql, mongodb, typescript, vitest',
 		scope: 'backend',
@@ -64,7 +64,7 @@ export const projectsData: project[] = [
 
 	{
 		name: 'Projects',
-		url: 'projects',
+		url: '/',
 		txt: 'Alguns pequenos projetos focados em algo especifico.',
 		stack: '',
 		scope: 'FullStack',
