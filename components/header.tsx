@@ -6,7 +6,7 @@ export const Header = () => {
     <StyledHeader>
       <Link href={"/"}>Inicio</Link>
 
-      <Link href={"/projectsPage"}>Projetos</Link>
+      <Link href={"/projects"}>Projetos</Link>
       <Link href={"/about"}>Sobre mim</Link>
     </StyledHeader>
   );

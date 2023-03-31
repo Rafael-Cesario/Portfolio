@@ -1,43 +1,48 @@
-import Link from "next/link";
-import { StyledProject } from "./styles/styledProject";
-import { projectsData } from "./utils/projectsData";
+import Link from 'next/link';
+import { StyledProject } from './styles/styledProject';
+import { projectsData } from './utils/projectsData';
+import { useRouter } from 'next/router';
 
 interface ProjectContainerProps {
-  props: {
-    scopeFilter: string;
-  };
+	props: {
+		scopeFilter: string;
+	};
 }
 
 export const ProjectContainer = ({ props: { scopeFilter } }: ProjectContainerProps) => {
-  const filterProjects = (scopeFilter: string) => {
-    if (!scopeFilter) return projectsData;
+	const router = useRouter();
 
-    const projectsFiltered = projectsData.filter(({ scope }) => {
-      return scope.toLowerCase() === scopeFilter.toLowerCase();
-    });
+	const filterProjects = (scopeFilter: string) => {
+		if (!scopeFilter) return projectsData;
 
-    return projectsFiltered;
-  };
+		const projectsFiltered = projectsData.filter(({ scope }) => {
+			return scope.toLowerCase() === scopeFilter.toLowerCase();
+		});
 
-  const projects = filterProjects(scopeFilter);
+		return projectsFiltered;
+	};
 
-  return (
-    <>
-      {projects.map(({ name, txt, stack, scope, github }) => {
-        return (
-          <StyledProject key={name}>
-            <h1 className="title">{name}</h1>
+	const projects = filterProjects(scopeFilter);
 
-            <Link href={github} target={"_blank"}>
-              Github
-            </Link>
+	return (
+		<>
+			{projects.map(({ name, url, txt, stack, scope, github }) => {
+				return (
+					<StyledProject key={name}>
+						<h1 className="title" onClick={() => router.push(`/projects/${url}`)}>
+							{name}
+						</h1>
 
-            <p className="txt">{txt}</p>
-            <p className="stack">{stack}</p>
-            <p className="scope">{scope}</p>
-          </StyledProject>
-        );
-      })}
-    </>
-  );
+						<Link href={github} target={'_blank'}>
+							Github
+						</Link>
+
+						<p className="txt">{txt}</p>
+						<p className="stack">{stack}</p>
+						<p className="scope">{scope}</p>
+					</StyledProject>
+				);
+			})}
+		</>
+	);
 };

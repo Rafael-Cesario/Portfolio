@@ -4,7 +4,6 @@ import { ProjectContainer } from "@/components/pages/projectContainer/projectCon
 import { Title } from "@/components/pages/projectContainer/title";
 import { StyledPage } from "@/styles/styledPage";
 import Head from "next/head";
-import Link from "next/link";
 import { useState } from "react";
 
 const ProjectsPage = () => {
