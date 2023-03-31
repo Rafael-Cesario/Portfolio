@@ -1,5 +1,5 @@
 import { StyledPage } from "@/styles/styledPage";
-import { Header } from "@/components/header";
+import { Header } from "@/components/common/header";
 import { Main } from "@/components/pages/index/main";
 import Head from "next/head";
 

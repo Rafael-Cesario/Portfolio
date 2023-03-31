@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { StyledSocials } from "./styles/styledSocials";
-import { Notification } from "../../notification";
+import { Notification } from "../../common/notification";
 import { useState } from "react";
 
 interface SocialsProps {

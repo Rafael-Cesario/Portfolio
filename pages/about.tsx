@@ -1,4 +1,4 @@
-import { Header } from '@/components/header';
+import { Header } from '@/components/common/header';
 import { StyledText } from '@/components/pages/about/styledText';
 import { StyledPage } from '@/styles/styledPage';
 import Head from 'next/head';

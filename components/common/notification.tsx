@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { StyledNotification } from "./styledNotification";
+import { StyledNotification } from "./styles/styledNotification";
 
 interface NotificationProps {
   props: {

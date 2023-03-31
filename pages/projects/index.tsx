@@ -1,4 +1,4 @@
-import { Header } from "@/components/header";
+import { Header } from "@/components/common/header";
 import { Filter } from "@/components/pages/projectContainer/filter";
 import { ProjectContainer } from "@/components/pages/projectContainer/projectContainer";
 import { Title } from "@/components/pages/projectContainer/title";
