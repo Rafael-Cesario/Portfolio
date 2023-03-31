@@ -1,8 +1,21 @@
+import { Carousel } from '@/components/pages/project/carousel';
 import { StyledTodolist } from '@/styles/projects/styledTodolist';
 import Head from 'next/head';
-import Image from 'next/image';
+import { useRef, useState } from 'react';
 
 const Todolist = () => {
+	const imgs = [
+		'Todolist (1)',
+		'Todolist (2)',
+		'Todolist (3)',
+		'Todolist (4)',
+		'Todolist (5)',
+		'Todolist (6)',
+		'Todolist (7)',
+		'Todolist (8)',
+		'Todolist (9)',
+	];
+
 	return (
 		<StyledTodolist>
 			<Head>
@@ -65,22 +78,7 @@ const Todolist = () => {
 			<div className="screenshots">
 				<h1>Screenshots</h1>
 
-				<div className="imgs">
-					<Image width={1920} height={1080} src="/projects/todolist/Captura de tela 2023-03-30 045042.png" alt="project image" />
-					<Image width={1920} height={1080} src="/projects/todolist/Captura de tela 2023-03-30 045359.png" alt="project image" />
-					<Image width={1920} height={1080} src="/projects/todolist/Captura de tela 2023-03-30 045528.png" alt="project image" />
-					<Image width={1920} height={1080} src="/projects/todolist/Captura de tela 2023-03-30 045557.png" alt="project image" />
-					<Image width={1920} height={1080} src="/projects/todolist/Captura de tela 2023-03-30 045625.png" alt="project image" />
-					<Image width={1920} height={1080} src="/projects/todolist/Captura de tela 2023-03-30 045804.png" alt="project image" />
-					<Image width={1920} height={1080} src="/projects/todolist/Captura de tela 2023-03-30 045823.png" alt="project image" />
-					<Image width={1920} height={1080} src="/projects/todolist/Captura de tela 2023-03-30 050131.png" alt="project image" />
-					<Image width={1920} height={1080} src="/projects/todolist/Captura de tela 2023-03-30 052401.png" alt="project image" />
-				</div>
-
-				<div className="buttons">
-					<button>{'<'}</button>
-					<button>{'>'}</button>
-				</div>
+				<Carousel imgs={imgs} />
 			</div>
 		</StyledTodolist>
 	);

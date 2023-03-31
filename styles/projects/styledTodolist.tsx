@@ -75,49 +75,5 @@ export const StyledTodolist = styled.div`
 			align-self: flex-start;
 			width: 100%;
 		}
-
-		.imgs {
-			display: flex;
-			width: 80vw;
-			max-width: 1000px;
-			overflow-x: scroll;
-
-			::-webkit-scrollbar {
-				background-color: #151515;
-			}
-
-			/* ::-webkit-scrollbar-thumb {
-				background-color: #151515;
-			} */
-
-			img {
-				max-width: 1000px;
-				width: 80vw;
-				height: auto;
-				border: 10px solid #202020;
-			}
-		}
-
-		.buttons {
-			button {
-				cursor: pointer;
-				border: none;
-				outline: none;
-				padding: 10px 3rem;
-				margin: 1rem;
-				font-weight: bold;
-				background-color: #202020;
-				color: #ddd;
-				transition: 0.2s;
-
-				:hover {
-					transform: scale(1.05);
-				}
-
-				:active {
-					transform: scale(1);
-				}
-			}
-		}
 	}
 `;
