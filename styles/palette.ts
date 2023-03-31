@@ -1,10 +1,10 @@
 export const palette = {
-  colors: {
-    bgBlue: "#005090",
-    textBlue: "#0090cc",
-  },
+	colors: {
+		bgBlue: '#0060bb',
+		textBlue: '#0090cc',
+	},
 
-  element: {
-    borderRadius: "0.1rem",
-  },
+	element: {
+		borderRadius: '0.1rem',
+	},
 };

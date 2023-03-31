@@ -63,7 +63,6 @@ const Todolist = () => {
 						<li>&#x274c; Tests.</li>
 					</ul>
 				</div>
-
 				<div className="backend">
 					<h2>BackEnd</h2>
 					<ul>

@@ -12,11 +12,11 @@ export const StyledTodolist = styled.div`
 	.stack,
 	.roadmap,
 	.screenshots {
-		background-color: #151515;
-		border: 3px solid #181818;
+		/* background-color: #151515; */
+		/* border: 3px solid #171717; */
 		margin: 2rem 0;
 		padding: 10px 20px;
-		max-width: 1000px;
+		max-width: 1200px;
 		width: 100%;
 		position: relative;
 
@@ -24,18 +24,18 @@ export const StyledTodolist = styled.div`
 			font-size: 1.1rem;
 			font-weight: bold;
 			margin: 1rem 0;
-			border-bottom: 2px solid #202020;
-			padding-bottom: 0.5rem;
+			color: #ddd;
 		}
 
 		h2 {
 			font-size: 0.9rem;
 			font-weight: bold;
 			margin: 2rem 0 0.5rem 0;
+			color: #aaa;
 		}
 
 		ul {
-			margin: 0 2rem;
+			margin: 1rem 2rem;
 			list-style-type: '- ';
 			list-style-position: inside;
 			line-height: 1.4rem;
@@ -52,18 +52,31 @@ export const StyledTodolist = styled.div`
 	}
 
 	.title {
-		margin-top: 1rem;
-		text-align: center;
+		margin: 5rem 0;
 
 		h1 {
-			font-size: 1.5rem;
-			border: none;
-			margin: 0;
+			font-size: 2rem;
+			background-color: ${palette.colors.bgBlue};
+			width: fit-content;
+			padding: 5px 50px;
+			border-radius: 1px;
+			margin-bottom: 0.5rem;
 		}
+	}
+
+	.features,
+	.roadmap {
+		background-color: #151515;
+		border: 2px solid #181818;
 	}
 
 	.stack {
 		text-transform: capitalize;
+
+		p {
+			background-color: #151515;
+			padding: 10px 30px;
+		}
 	}
 
 	.screenshots {

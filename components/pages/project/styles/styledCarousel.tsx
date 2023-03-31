@@ -11,6 +11,7 @@ export const StyledCarousel = styled.div`
 		max-width: 900px;
 		display: flex;
 		transition: 0.3s ease-in-out;
+		cursor: pointer;
 		transform: translateX(0);
 
 		img {
