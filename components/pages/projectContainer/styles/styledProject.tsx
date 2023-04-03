@@ -26,7 +26,7 @@ export const StyledProject = styled.div`
 
 	.title {
 		position: absolute;
-		transform: translate(0, -50px);
+		transform: translate(1rem, -1rem);
 		padding: 0.5rem 2rem;
 		font-size: 1.1rem;
 		font-weight: bold;
@@ -34,6 +34,9 @@ export const StyledProject = styled.div`
 		border-radius: ${palette.element.borderRadius};
 		background-color: ${palette.colors.bgBlue};
 		cursor: pointer;
+		width: fit-content;
+		color: #ddd;
+		left: 0;
 
 		:hover {
 			background-color: #222;

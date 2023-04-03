@@ -4,13 +4,11 @@ type project = {
 	stack: string;
 	scope: string;
 	github: string;
-	url: string;
 };
 
 export const projectsData: project[] = [
 	{
 		name: 'To Do List FullStack',
-		url: 'todolist',
 		txt: 'Create lists, todos and tags to keep yourself organized while working or studying something.',
 		stack: 'React, react-router, typescript, graphql, apollo, vite, vitest, jwt, mongodb, styled-components',
 		scope: 'FullStack',
@@ -19,7 +17,6 @@ export const projectsData: project[] = [
 
 	{
 		name: 'WordList',
-		url: 'wordlist',
 		txt: 'WordList é um site feito para te ajudar a aprender um idioma, mais precisamente para te ajudar a memorizar algumas palavras.',
 		stack: 'nextjs, styled-components, graphql, mongodb, vitest, typescript',
 		scope: 'FullStack',
@@ -28,7 +25,6 @@ export const projectsData: project[] = [
 
 	{
 		name: 'Algorithms',
-		url: '/',
 		txt: 'Uma coleção de algoritmos.',
 		stack: 'Javascript',
 		scope: '',
@@ -37,7 +33,6 @@ export const projectsData: project[] = [
 
 	{
 		name: 'Portfólio',
-		url: '/',
 		txt: 'Meu site pessoal para salvar meus projetos.',
 		stack: 'nextjs, styled-components, vitest, typescript',
 		scope: 'Frontend',
@@ -46,7 +41,6 @@ export const projectsData: project[] = [
 
 	{
 		name: 'Login',
-		url: '/',
 		txt: 'Uma pagina para fazer login ou criar uma conta.',
 		stack: 'nextjs, graphql, tailwindcss, typescript, mongodb, JWT',
 		scope: 'FullStack',
@@ -55,7 +49,6 @@ export const projectsData: project[] = [
 
 	{
 		name: 'User Crud - Graphql',
-		url: '/',
 		txt: 'Um simples crud de usuario utilizando graphql.',
 		stack: 'graphql, mongodb, typescript, vitest',
 		scope: 'backend',
@@ -64,7 +57,6 @@ export const projectsData: project[] = [
 
 	{
 		name: 'Projects',
-		url: '/',
 		txt: 'Alguns pequenos projetos focados em algo especifico.',
 		stack: '',
 		scope: 'FullStack',

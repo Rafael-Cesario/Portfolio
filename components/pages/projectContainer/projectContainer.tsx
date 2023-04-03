@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { StyledProject } from './styles/styledProject';
 import { projectsData } from './utils/projectsData';
-import { useRouter } from 'next/router';
 
 interface ProjectContainerProps {
 	props: {
@@ -10,8 +9,6 @@ interface ProjectContainerProps {
 }
 
 export const ProjectContainer = ({ props: { scopeFilter } }: ProjectContainerProps) => {
-	const router = useRouter();
-
 	const filterProjects = (scopeFilter: string) => {
 		if (!scopeFilter) return projectsData;
 
@@ -26,12 +23,12 @@ export const ProjectContainer = ({ props: { scopeFilter } }: ProjectContainerPro
 
 	return (
 		<>
-			{projects.map(({ name, url, txt, stack, scope, github }) => {
+			{projects.map(({ name, txt, stack, scope, github }) => {
 				return (
 					<StyledProject key={name}>
-						<h1 className="title" onClick={() => router.push(`/projects/${url}`)}>
+						<Link target={'_blank'} href={github} className="title">
 							{name}
-						</h1>
+						</Link>
 
 						<Link href={github} target={'_blank'}>
 							Github
