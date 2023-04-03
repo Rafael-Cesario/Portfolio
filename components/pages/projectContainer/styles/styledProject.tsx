@@ -47,7 +47,7 @@ export const StyledProject = styled.div`
 		position: absolute;
 		right: 0;
 		top: 0;
-		transform: translate(-1rem, -20px);
+		transform: translate(-1rem, -2.5rem);
 		text-decoration: none;
 		color: #aaa;
 

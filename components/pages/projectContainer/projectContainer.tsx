@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { StyledProject } from './styles/styledProject';
+import { StyledProjectContainer } from './styles/styledProjectContainer';
 import { projectsData } from './utils/projectsData';
 
 interface ProjectContainerProps {
@@ -22,7 +23,7 @@ export const ProjectContainer = ({ props: { scopeFilter } }: ProjectContainerPro
 	const projects = filterProjects(scopeFilter);
 
 	return (
-		<>
+		<StyledProjectContainer>
 			{projects.map(({ name, txt, stack, scope, github }) => {
 				return (
 					<StyledProject key={name}>
@@ -40,6 +41,6 @@ export const ProjectContainer = ({ props: { scopeFilter } }: ProjectContainerPro
 					</StyledProject>
 				);
 			})}
-		</>
+		</StyledProjectContainer>
 	);
 };
