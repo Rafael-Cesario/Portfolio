@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledTitle = styled.div`
-	margin: 10rem;
+	margin: 10rem 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
