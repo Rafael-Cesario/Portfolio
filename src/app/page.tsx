@@ -1,12 +1,13 @@
-"use client";
-import { styled } from "styled-components";
-
-const StyledTitle = styled.h1`
-	color: blue;
-`;
+import { Header } from "@/components/header";
+import { Introduction } from "@/components/introduction";
 
 const Home = () => {
-	return <StyledTitle>Rafael Cesário</StyledTitle>;
+	return (
+		<>
+			<Header />
+			<Introduction />
+		</>
+	);
 };
 
 export default Home;
