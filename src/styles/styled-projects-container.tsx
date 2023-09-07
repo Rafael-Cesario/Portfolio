@@ -6,7 +6,7 @@ export const StyledProjectsContainer = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 4rem 2rem;
+	margin: 8rem 2rem;
 
 	.project {
 		max-width: 600px;

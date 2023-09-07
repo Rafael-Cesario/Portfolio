@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { Introduction } from "@/components/introduction";
+import { MainStack } from "@/components/main-stack";
 import { ProjectsAbout } from "@/components/projects-about";
 import { ProjectContainer } from "@/components/projects-container";
 
@@ -10,6 +11,7 @@ const Home = () => {
 			<Introduction />
 			<ProjectsAbout />
 			<ProjectContainer />
+			<MainStack />
 		</>
 	);
 };
