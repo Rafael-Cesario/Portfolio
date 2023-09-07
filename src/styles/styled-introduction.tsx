@@ -7,8 +7,7 @@ export const StyledIntroduction = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	margin: 2rem;
-	margin-top: 12rem;
+	margin: 14rem 2rem;
 
 	.highlight {
 		color: ${Theme.textPrimary};
@@ -22,6 +21,7 @@ export const StyledIntroduction = styled.div`
 
 	.text {
 		border-top: 2px solid ${Theme.container};
+		line-height: 25px;
 		padding-top: 1rem;
 	}
 
@@ -53,7 +53,7 @@ export const StyledIntroduction = styled.div`
 
 		.alt {
 			position: absolute;
-            pointer-events: none;
+			pointer-events: none;
 			left: 0;
 			font-size: 1rem;
 			transform: translate(-40%, 2.5rem);

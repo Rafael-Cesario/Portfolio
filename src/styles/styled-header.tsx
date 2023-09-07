@@ -7,7 +7,9 @@ export const StyledHeader = styled.header`
 	justify-content: center;
 	margin: 1rem;
 
-	button {
+	a {
+		text-decoration: none;
+		font-size: 0.8rem;
 		border: 2px solid transparent;
 		padding: 5px 10px;
 		margin: 4px;

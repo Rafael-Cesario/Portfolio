@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Introduction = () => {
 	return (
-		<StyledIntroduction>
+		<StyledIntroduction id="home">
 			<Image className="picture" src="/images/rafael01.jpg" width={2160} height={2700} alt="my profile picture" />
 
 			<div className="info">
