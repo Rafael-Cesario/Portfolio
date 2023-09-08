@@ -1,3 +1,4 @@
+import { About } from "@/components/about";
 import { Header } from "@/components/header";
 import { Introduction } from "@/components/introduction";
 import { MainStack } from "@/components/main-stack";
@@ -12,6 +13,7 @@ const Home = () => {
 			<ProjectsAbout />
 			<ProjectContainer />
 			<MainStack />
+			<About />
 		</>
 	);
 };
