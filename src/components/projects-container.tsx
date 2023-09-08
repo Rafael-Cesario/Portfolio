@@ -1,11 +1,12 @@
 import { StyledProjectsContainer } from "@/styles/styled-projects-container";
 import { projects } from "@/lib/projects-data";
+import { BsFillStarFill } from "react-icons/bs";
 import Link from "next/link";
 
 export const ProjectContainer = () => {
 	return (
 		<StyledProjectsContainer>
-			{projects.map(({ name, description, stack, github, tag }) => (
+			{projects.map(({ name, description, stack, github, tag, favorite }) => (
 				<div className="project" key={name}>
 					<h1 className="name">{name}</h1>
 
@@ -19,6 +20,8 @@ export const ProjectContainer = () => {
 
 					<p className="description">{description}</p>
 					<p className="stack">{stack}</p>
+
+					{favorite && <BsFillStarFill className="icon" />}
 				</div>
 			))}
 

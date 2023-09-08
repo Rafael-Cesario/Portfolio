@@ -9,6 +9,7 @@ export const StyledProjectsContainer = styled.div`
 	margin: 8rem 2rem;
 
 	.project {
+		width: 100vw;
 		max-width: 600px;
 		margin: 2rem;
 		padding: 2rem;
@@ -18,6 +19,7 @@ export const StyledProjectsContainer = styled.div`
 
 		.name {
 			margin-bottom: 1rem;
+			color: ${Theme.textPrimary};
 		}
 
 		.side {
@@ -42,6 +44,12 @@ export const StyledProjectsContainer = styled.div`
 		.stack {
 			font-size: 0.9rem;
 			color: ${Theme.text + "80"};
+		}
+
+		.icon {
+			margin-top: 1rem;
+			color: gold;
+			font-size: 0.8rem;
 		}
 	}
 
