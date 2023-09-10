@@ -17,6 +17,13 @@ export const StyledProjectsContainer = styled.div`
 		border-radius: ${Theme.borderRadius};
 		position: relative;
 
+		.head {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+		}
+
 		.name {
 			margin-bottom: 1rem;
 			color: ${Theme.textPrimary};
@@ -24,10 +31,6 @@ export const StyledProjectsContainer = styled.div`
 
 		.side {
 			display: flex;
-			position: absolute;
-			margin: 3rem 2rem;
-			top: 0;
-			right: 0;
 			font-size: 0.8rem;
 			color: ${Theme.text + "50"};
 

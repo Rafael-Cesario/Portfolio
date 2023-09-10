@@ -6,6 +6,8 @@ export const StyledMainStack = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 4rem;
+	text-align: center;
 
 	.container {
 		margin: 2rem;
@@ -22,5 +24,6 @@ export const StyledMainStack = styled.div`
 		border-radius: ${Theme.borderRadius};
 		background-color: ${Theme.primary};
 		font-weight: bold;
+		flex-grow: 1;
 	}
 `;

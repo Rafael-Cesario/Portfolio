@@ -8,14 +8,14 @@ export const ProjectContainer = () => {
 		<StyledProjectsContainer>
 			{projects.map(({ name, description, stack, github, tag, favorite }) => (
 				<div className="project" key={name}>
-					<h1 className="name">{name}</h1>
-
-					<div className="side">
-						<Link href={github} target="_blank">
-							Github
-						</Link>
-
-						<span className="tag">{tag}</span>
+					<div className="head">
+						<h1 className="name">{name}</h1>
+						<div className="side">
+							<Link href={github} target="_blank">
+								Github
+							</Link>
+							<span className="tag">{tag}</span>
+						</div>
 					</div>
 
 					<p className="description">{description}</p>
