@@ -28,19 +28,11 @@ export const projects: IProject[] = [
 	},
 	{
 		name: "To do List",
-		description: "Uma to do list integrada com mongoDB, para criação de listas e tarefas",
-		stack: "Typescript, Styled-Components, React, react-router, vitest, JWT, GraphQl, mongoDB",
-		github: "https://github.com/Rafael-Cesario/To-Do-List-Full-Stack",
+		description: "Crie listas, tarefas e tags. Uma to do list, integrada com postgres e testes feitos com cypress",
+		stack: "Next, Styled-components, redux, cypress, Nest, Postgres, Prisma, graphql, jwt, jest, supertest-graphql, docker",
+		github: "https://github.com/Rafael-Cesario/To-do-list",
 		tag: "FullStack",
 		favorite: true,
-	},
-	{
-		name: "Agile Quiz",
-		description: "Agile quiz é um pequeno quiz app com 10 perguntas sobre metodologia agil.",
-		stack: "Typescript, Cypress, React, Styled-Components",
-		github: "https://github.com/Rafael-Cesario/Projects/tree/main/Frontend/05-agile-quiz",
-		tag: "Frontend",
-		favorite: false,
 	},
 	{
 		name: "NestJS Crud Postgres",
@@ -48,14 +40,6 @@ export const projects: IProject[] = [
 		stack: "Typescript, NestJS, Prisma, PostgreSQL, Docker, Jest, JWT",
 		github: "https://github.com/Rafael-Cesario/Projects/tree/main/Backend/05_nest_crud_postgres",
 		tag: "Backend",
-		favorite: false,
-	},
-	{
-		name: "Algorithms",
-		description: "Coleção de algoritmos",
-		stack: "Javascript",
-		github: "https://github.com/Rafael-Cesario/Algorithms",
-		tag: "Algorithms",
 		favorite: false,
 	},
 ];
