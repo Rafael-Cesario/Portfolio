@@ -7,16 +7,14 @@ import Link from "next/link";
 export const Introduction = () => {
 	return (
 		<StyledIntroduction id="home">
-			<Image className="picture" src="/images/rafael01.jpg" width={2160} height={2700} alt="my profile picture" />
-
 			<div className="info">
 				<h1 className="title">
-					Olá, eu sou o <span className="highlight">Rafael Cesário</span> <br /> um desenvolvedor FullStack
+					Olá, eu sou o <span className="highlight">Rafael Cesário</span> <br /> um Desenvolvedor FullStack
 				</h1>
 
 				<p className="text">
-					Estou há 2 anos criando e compartilhando projetos, conduzindo-os do zero até a fase de deploy, abrangendo tanto o frontend quanto o backend, aprimorando minhas habilidades em
-					<span className="highlight"> typescript, react, node, graphQl, banco de dados, e APIs</span>, dando atenção a um código limpo, testado, de fácil manutenção e escalável.
+					Há mais de 2 anos criando projetos do zero, dando atenção a um código limpo, testado, de fácil manutenção e
+					escalável.
 				</p>
 
 				<div className="links">

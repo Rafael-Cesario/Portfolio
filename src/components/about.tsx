@@ -37,30 +37,27 @@ export const About = () => {
 				<h1 className="title">Sobre</h1>
 
 				<p className="text">
-					Iniciei minha carreira profissional como designer gráfico em 2018 com 18 anos, trabalhando com design e fotografia em uma empresa de formaturas e eventos por 1 ano e 5 meses.
-				</p>
-
-				<p className="text">Inúmeros fotógrafos por falta de tempo e alta demanda, para não deixarem de fotografar eventos, recorriam a editores como eu para a edição de suas fotos.</p>
-
-				<p className="text">
-					Tendo meu trabalho principal, fotos para editar e o objetivo de entrar em uma faculdade, decidi que eu poderia deixar meu trabalho e focar apenas na faculdade enquanto continuo editando
-					fotos.
-				</p>
-
-				<p className="text">Como um bom curioso comecei a olhar e estudar aos poucos o que seria a grade curricular de uma faculdade de ciência da computação. </p>
-
-				<p className="text">
-					Sempre gostei e percebi uma facilidade maior de estudar quando sozinho, decidi experimentar por 1 ano o quão longe eu poderia chegar e se esse seria um bom caminho a se seguir.
+					Iniciei minha carreira profissional como designer gráfico em 2018 com 18 anos, 
+					trabalhando com design e fotografia em uma empresa de formaturas e eventos por mais de 2 anos.
 				</p>
 
 				<p className="text">
-					Tendo gostado tanto dessa forma de estudo e vendo minha evolução, decidi continuar estudando por conta própria e no fim do meu segundo ano de estudos, começar a procurar por empresas que se
-					alinhem com meus estudos e objetivos, como forma de contribuir e continuar crescendo.
+					Atualmente tenho 24 anos, trabalhei com fotografia e design por 3 anos.
+					Em 2021 dei inicio a meus estudos em desenvolvimento web enquanto trabalhava em outras áreas.
+				</p>
+				
+				<p className="text">
+					Como autodidata, constantemente tenho aprimorado minha capacidade de lidar com problemas, planejar,
+					pesquisar, descobrir, adaptar, e continuar melhorando.
 				</p>
 
 				<p className="text">
-					Atualmente tenho 23 anos, trabalhei com fotografia e design por 3 anos, estou há 2 anos estudando desenvolvimento web, e em busca da minha primeira oportunidade para aplicar minhas
-					habilidades, contribuir em projetos e continuar crescendo.
+					Iniciei meus estudos com lógica de programação, estrutura de dados e algoritmos, banco de dados, SQL,
+					programação orientada a objetos, e desenvolvimento web que tenho dado total foco até o momento.
+				</p>
+
+				<p className="text">
+					Me familiarizei com metodologias ágeis, Scrum, Kanban, Extreme programming.
 				</p>
 			</div>
 		</StyledAbout>

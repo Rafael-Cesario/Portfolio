@@ -7,6 +7,7 @@ export const MainStack = () => {
 
 			<div className="container">
 				<span className="tech">Typescript</span>
+				<span className="tech">Ruby on Rails</span>
 				<span className="tech">Git</span>
 				<span className="tech">React</span>
 				<span className="tech">NextJS</span>
@@ -20,6 +21,7 @@ export const MainStack = () => {
 				<span className="tech">Cypress</span>
 				<span className="tech">Prisma</span>
 				<span className="tech">NestJS</span>
+				<span className="tech">Rspec</span>
 			</div>
 		</StyledMainStack>
 	);
